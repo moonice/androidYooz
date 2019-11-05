@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@+id/register_img"
+                    android:layout_toRightOf="@+id/register_img"
+                    android:text="@string/login_activity_main_txt"
+                    android:textAlignment="center"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/register_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo3"/>
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/login_activity_username_hint"
+                        android:background="@drawable/registerfield_style"
+                        android:layout_marginTop="5dp"
+                        android:padding="8dp"
+                        android:textColorHint="@color/colorWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/register_username"
+                            android:maxLines="1"
+                            android:inputType="text"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/register_emailtxt"
+                        android:background="@drawable/registerfield_style"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="@color/colorWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:gravity="start"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/register_email"
+                            android:maxLines="1"
+                            android:inputType="textEmailAddress"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/register_phone"
+                        android:background="@drawable/registerfield_style"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="@color/colorWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:gravity="start"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/register_phone"
+                            android:maxLines="1"
+                            android:inputType="phone"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/register_passtxt"
+                            android:background="@drawable/registerfield_style"
+                            android:layout_marginTop="10dp"
+                            android:padding="8dp"
+                            android:textColorHint="@color/colorWhite">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:gravity="start"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/register_pass"
+                                android:maxLines="1"
+                                android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/register_passtxt2"
+                        android:background="@drawable/registerfield_style"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="@color/colorWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:gravity="start"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/register_pass2"
+                            android:maxLines="1"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/register_code"
+                        android:background="@drawable/registerfield_style"
+                        android:layout_marginTop="10dp"
+                        android:padding="8dp"
+                        android:textColorHint="@color/colorWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:gravity="start"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/register_code"
+                            android:maxLines="1"
+                            android:inputType="text"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorAccentDark"
+                        android:layoutDirection="rtl"
+                        android:paddingTop="2dp"
+                        android:text="@string/register_tik"
+                        android:textColor="@color/colorPrimary" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_button"
+                        android:textAlignment="center"
+                        android:textSize="23sp"
+                        android:background="@drawable/register_button_style"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="12dp"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

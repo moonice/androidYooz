@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Yoozbit</string>
+    <string name="txt_splash_version">Ver 1.0.20</string>
+    <string name="txt_splash_main">موفقیت در دستان توست</string>
+    <string name="txt_splash_site">Yoozbit.com</string>
+    <string name="login_activity_username_hint">نام کاربری را وارد کنید</string>
+    <string name="login_activity_main_txt">ثبت نام در یوزبیت</string>
+    <string name="register_passtxt">کلمه عبور را وارد کنید</string>
+    <string name="register_emailtxt">ایمیل را وارد نمایید</string>
+    <string name="register_button">عضویت</string>
+    <string name="register_phone">شماره موبایل خود را وارد کنید</string>
+    <string name="register_passtxt2">تکرار کلمه عبور</string>
+    <string name="register_code">کد معرف</string>
+    <string name="register_tik">قوانین و شرایط استفاده از یوزبیت را می پذیرم</string>
+</resources>
