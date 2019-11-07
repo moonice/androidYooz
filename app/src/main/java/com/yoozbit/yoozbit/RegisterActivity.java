@@ -29,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         mobile = (TextInputEditText) findViewById(R.id.register_phone);
         pass = (TextInputEditText) findViewById(R.id.register_pass);
         pass2 = (TextInputEditText) findViewById(R.id.register_pass2);
+        code = (TextInputEditText)findViewById(R.id.register_code);
     }
 
 
@@ -39,6 +40,9 @@ public class RegisterActivity extends AppCompatActivity {
         name.getText().toString();
         if (name == null) {
             Toast.makeText(getApplicationContext(), "لطفا نام کاربری را وارد نمایید", Toast.LENGTH_SHORT).show();
+            return;
+        }else if (name.length()<6){
+            Toast.makeText(getApplicationContext(),"نام کاربری باید حداقل 6 حرف باشد",Toast.LENGTH_SHORT).show();
             return;
         }
     }
@@ -78,6 +82,10 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }
 
+    }
+
+    public void setCode(){
+        code.getText().toString();
     }
 
 
