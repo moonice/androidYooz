@@ -172,6 +172,7 @@
 
 
                     <Button
+                        android:id="@+id/register_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/register_button"
