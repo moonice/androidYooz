@@ -12,13 +12,15 @@
     <string name="register_passtxt2">تکرار کلمه عبور</string>
     <string name="register_code">کد معرف</string>
     <string name="register_tik">قوانین و شرایط استفاده از یوزبیت را می پذیرم</string>
-    <string name="title_activity_login">Sign in</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
+    <string name="register_before">قبلا در یوزبیت عضو شده اید؟ وارد شوید</string>
+    <string name="Login_mainText">ورود به حساب کاربری</string>
+    <string name="Login_Registered_Before">هنوز در یوزبیت عضو نشده اید؟ عضو یوزبیت شوید</string>
+    <string name="Login_username_hint">نام کاربری، ایمیل یا شماره موبایل را وارد کنید</string>
+    <string name="Login_btn">ورود</string>
+    <string name="Forget_Password_main">بازیابی کلمه عبور</string>
+    <string name="Forget_Password_txt">کلمه عبور خود را بازیابی کنید</string>
+    <string name="Register_Yoozbit">هنوز در یوزبیت ثبت نام نکرده اید؟ همین حالا عضو یوزبیت شوید</string>
+    <string name="Login_Yoozbit">در یوزبیت حساب کاربری دارید؟ وارد شوید</string>
+    <string name="Forget_Password">کلمه عبور خود را فراموش کرده اید؟</string>
+
 </resources>
