@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -26,13 +27,24 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 import com.google.android.material.textfield.TextInputEditText;
+
+import okhttp3.OkHttpClient;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -40,22 +52,42 @@ public class RegisterActivity extends AppCompatActivity {
     Button register_btn;
     CheckBox rules_checkbox;
      boolean CheckData;
-     private final String main_url = "https://yoozbit.com/apiAndroid/index.php?apiKey=lkevhfsvjk34g934hSDFSDFsd3";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
         setupViews();
+
+        APIInterface apiInterface = APIClient.getClient().create(APIInterface.class);
+        Call<Model> data = apiInterface.getData();
+
+        data.enqueue(new Callback<Model>() {
+            @Override
+            public void onResponse(Call<Model> call, Response<Model> response) {
+
+                if (response.isSuccessful()) {
+
+                        Toast.makeText(getApplicationContext(), response.body().message, Toast.LENGTH_LONG).show();
+
+                   }
+            }
+
+            @Override
+            public void onFailure(Call<Model> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "اوپس", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
 
         register_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                new JSONTask().execute(main_url);
+                /*new JSONTask().execute(main_url);*/
 
 
             }
@@ -138,7 +170,9 @@ public class RegisterActivity extends AppCompatActivity {
     }*/
 
 
-    public class JSONTask extends AsyncTask<String,String,String>{
+
+
+   /* public class JSONTask extends AsyncTask<String,String,String>{
 
         @Override
         protected String doInBackground(String... params) {
@@ -189,7 +223,7 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
         }
     }
-
+*/
 
 
 

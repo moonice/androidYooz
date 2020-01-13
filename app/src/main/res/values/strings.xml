@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Yoozbit</string>
     <string name="txt_splash_version">Ver 1.0.20</string>
-    <string name="txt_splash_main">موفقیت در دستان توست</string>
+    <string name="txt_splash_main">به آینده فکر کن</string>
+    <string name="txt_splash_main2">یوزبیت دروازه ای برای ورود به دنیای تجارت الکترونیک</string>
     <string name="txt_splash_site">Yoozbit.com</string>
     <string name="login_activity_username_hint">نام کاربری را وارد کنید</string>
     <string name="login_activity_main_txt">ثبت نام در یوزبیت</string>

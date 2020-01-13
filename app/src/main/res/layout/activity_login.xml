@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorWhite"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -35,7 +35,7 @@
                 android:layout_toRightOf="@+id/login_img"
                 android:paddingTop="20dp"
                 android:text="@string/Login_mainText"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="28sp" />
 
         </RelativeLayout>
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Login_Registered_Before"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:layout_marginTop="30dp"/>
 
@@ -63,7 +63,7 @@
                 android:layout_margin="10dp"
                 android:padding="8dp"
                 android:hint="@string/Login_username_hint"
-                android:textColorHint="@color/colorWhite">
+                android:textColorHint="@color/colorPrimary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/Login_username"
@@ -81,7 +81,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/registerfield_style"
                 android:hint="@string/register_passtxt"
-                android:textColorHint="@color/colorWhite">
+                android:textColorHint="@color/colorPrimary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/Login_pass"
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:text="@string/Forget_Password"
             android:textSize="15sp"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorPrimary"
             android:layout_marginTop="20dp"
             android:layout_marginRight="12dp"/>
 
